@@ -1,8 +1,8 @@
 import React from 'react';
-import Router from 'react-router';
 import ReactDOM from 'react-dom';
-import createBrowserHistory from 'history/lib/createBrowserHistory';
-import routes from './routes';
+import { BrowserRouter as Router } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
+import App from './components/App';
 
 // Import Styles
 // import './styles/main.css';
@@ -11,4 +11,4 @@ import routes from './routes';
 
 // let history = createBrowserHistory();
 
-ReactDOM.render(<Router history={createBrowserHistory()}>{routes}</Router>, document.getElementById('root'));
+ReactDOM.render(<Router history={createBrowserHistory()}><App /></Router>, document.getElementById('root'));

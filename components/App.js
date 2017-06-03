@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Route, Link } from 'react-router-dom';
+import Blog from './Blog'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div> 
-      </div>
-    );
-  }
+export default class App extends Component {
+	render() {
+		return (
+			<div> 
+			</div>
+		)	
+	}
 }
-
-export default App;
